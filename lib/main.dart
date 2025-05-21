@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/Botao.dart';
 import 'package:meu_app/stateless/SemEstado.dart';
+import 'package:meu_app/stateless/User.dart';
 
 // void main() {
 //   runApp(Container(
@@ -17,7 +19,7 @@ import 'package:meu_app/stateless/SemEstado.dart';
 /// A UI NUNCA MUDA APÓS SER CONSTRUÍDA
 /// É USADO PARA COMPONENTES ESTÁTICOS COMO ÍCONES, TEXTOS FIXOS E ETC...
 /// 
-/// STATRFUL (ESTADO LOCAL)
+/// STATEFUL (ESTADO LOCAL)
 /// A UI MUDA QUANDO O ESTADO INTERNO MUDA
 /// É USADO EM WIDGETS QUE TEM INTENÇÃO COM O USUÁRIO, COMO ENTRADAS
 /// DE TEXTOS, CARREGAMENTO DE DADOS, ANIMAÇÕES E ETC...
@@ -27,6 +29,12 @@ import 'package:meu_app/stateless/SemEstado.dart';
 /// ÚTIL PARA DADOS GLOBAIS LEVES COMO TEMAS, IDIOMAS E ETC...
 
 void main() {
-  runApp(SemEstado());
-    
+  // runApp(SemEstado());
+  // runApp(MaterialApp(
+  //   home: Center(
+  //     child: Botao(),
+  //   ),
+  // ));
+
+  runApp(User());
 }
