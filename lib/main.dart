@@ -1,11 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/stateless/SemEstado.dart';
+
+// void main() {
+//   runApp(Container(
+//     child: Text(
+//       "Bem vindo ao Flutter",
+//       textDirection: TextDirection.ltr,
+//       style: TextStyle(color: Colors.lime, fontSize: 30.0),
+//     ),
+//   )); 
+// }
+//Main
+
+/// NO FLUTTER TEMOS 3 TIPOS DE APLICAÇÃO
+/// STATELESS (ESTADO IMUTÁVEL)
+/// A UI NUNCA MUDA APÓS SER CONSTRUÍDA
+/// É USADO PARA COMPONENTES ESTÁTICOS COMO ÍCONES, TEXTOS FIXOS E ETC...
+/// 
+/// STATRFUL (ESTADO LOCAL)
+/// A UI MUDA QUANDO O ESTADO INTERNO MUDA
+/// É USADO EM WIDGETS QUE TEM INTENÇÃO COM O USUÁRIO, COMO ENTRADAS
+/// DE TEXTOS, CARREGAMENTO DE DADOS, ANIMAÇÕES E ETC...
+/// 
+/// INHERITED (ESTADO HERDADO)
+/// COMPARTILHAR DADOS DESCENDENTES NA ÁRVORE DE WIDGETS
+/// ÚTIL PARA DADOS GLOBAIS LEVES COMO TEMAS, IDIOMAS E ETC...
 
 void main() {
-  runApp(Container(
-    child: Text(
-      "Bem vindo ao Flutter",
-      textDirection: TextDirection.ltr,
-      style: TextStyle(color: Colors.lime, fontSize: 30.0),
-    ),
-  )); 
+  runApp(SemEstado());
+    
 }
