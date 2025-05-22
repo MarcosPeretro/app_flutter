@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/Atv/Switch22.dart';
 import 'package:meu_app/Botao.dart';
+import 'package:meu_app/inherited/UserData.dart';
+import 'package:meu_app/inherited/UserInfos.dart';
 import 'package:meu_app/stateful/Contador.dart';
+import 'package:meu_app/stateful/DarkMode.dart';
+import 'package:meu_app/stateful/RandomNumber.dart';
 import 'package:meu_app/stateless/SemEstado.dart';
 import 'package:meu_app/stateless/User.dart';
 
@@ -41,7 +46,21 @@ void main() {
 
   //Exemplo stateful
 
+  // runApp(MaterialApp(
+  //   home: Contador(),
+  // ));
+
+  // runApp(MaterialApp(
+  //   home: DarkMode(),
+  // ));
+  
+  // runApp(RandomNumber());
+
+  // runApp(MaterialApp(
+  //   home: Switch22()
+  // ));
+
   runApp(MaterialApp(
-    home: Contador(),
+    home: Userinfos()
   ));
 }
