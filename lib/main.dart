@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/Atv/Loja.dart';
 import 'package:meu_app/Atv/Switch22.dart';
 import 'package:meu_app/Botao.dart';
 import 'package:meu_app/inherited/UserData.dart';
@@ -60,7 +61,11 @@ void main() {
   //   home: Switch22()
   // ));
 
+  // runApp(MaterialApp(
+  //   home: Userinfos()
+  // ));
+
   runApp(MaterialApp(
-    home: Userinfos()
+    home: Loja()
   ));
 }
