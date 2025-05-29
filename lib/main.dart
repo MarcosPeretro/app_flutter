@@ -1,9 +1,13 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:meu_app/Atv/Loja.dart';
 import 'package:meu_app/Atv/Switch22.dart';
-import 'package:meu_app/Atv2/Atividade02.dart';
+import 'package:meu_app/Atv2/atividade02.dart';
+import 'package:meu_app/Atv2/exercicioMaterial.dart';
 import 'package:meu_app/Botao.dart';
 import 'package:meu_app/MaterialWidget/myMaterial.dart';
+import 'package:meu_app/cupertino/mycupertino.dart';
 import 'package:meu_app/inherited/UserData.dart';
 import 'package:meu_app/inherited/UserInfos.dart';
 import 'package:meu_app/stateful/Contador.dart';
@@ -11,6 +15,7 @@ import 'package:meu_app/stateful/DarkMode.dart';
 import 'package:meu_app/stateful/RandomNumber.dart';
 import 'package:meu_app/stateless/SemEstado.dart';
 import 'package:meu_app/stateless/User.dart';
+import 'package:meu_app/widgetsLayout/LayoutApp.dart';
 
 // void main() {
 //   runApp(Container(
@@ -72,5 +77,16 @@ void main() {
   // ));
 
   // runApp(MyMaterial());
-  runApp(Atividade02());
+
+  // runApp(Atividade02());
+  
+  // runApp(Mycupertino());
+
+  //como decidir qual widget usar?
+  // if(Platform.isAndroid){
+  //   runApp(MyMaterial());
+  // }
+  // runApp(Mycupertino());
+
+  runApp(MotandoTela());
 }

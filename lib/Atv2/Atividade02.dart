@@ -6,10 +6,13 @@ class Atividade02 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  const MaterialApp(
       title: "Calculadora",
       debugShowCheckedModeBanner: false,
       home: Calculadora(),
+      // themeMode: isDarkMode ? ThemeMode.dark  : ThemeMode.light,
+      // theme: ThemeData.light(),
+      // darkTheme: ThemeData.dark(),
     );
   }
 }
@@ -22,14 +25,16 @@ class Calculadora extends StatefulWidget {
 }
 
 class _CalculadoraState extends State<Calculadora> {
+  bool isDarkMode = false;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       appBar: AppBar(
         title: Text("Calculadora"),),
         
       body: Center(
-        child: Align(alignment: Alignment.topCenter, child: Text("Bem vindo")),
+        child: Align(alignment: Alignment.topCenter, child: Text("Bem vindo"), ),
       ),
       
       drawer: Drawer(
@@ -52,11 +57,7 @@ class _CalculadoraState extends State<Calculadora> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          
-        },
-      ),
+      
       bottomNavigationBar: BottomAppBar(
         child: Text("Calculadora zika né?"),
       ),
