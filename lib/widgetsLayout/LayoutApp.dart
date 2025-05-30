@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/widgetsLayout/WidgetColumn.dart';
+import 'package:meu_app/widgetsLayout/WidgetContainer.dart';
+import 'package:meu_app/widgetsLayout/WidgetRow.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
@@ -7,21 +10,25 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "Widgets de layout",
-      home: MotandoTela(),
+      home: MontandoTela(),
     );
   }
 }
 
-class MotandoTela extends StatefulWidget {
-  const MotandoTela({super.key});
+class MontandoTela extends StatefulWidget {
+  const MontandoTela({super.key});
 
   @override
-  State<MotandoTela> createState() => _MotandoTelaState();
+  State<MontandoTela> createState() => _MontandoTelaState();
 }
 
-class _MotandoTelaState extends State<MotandoTela> {
+class _MontandoTelaState extends State<MontandoTela> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Scaffold(
+      appBar: AppBar(title: Text("Widgets de layout"),),
+      // body: Widgetcontainer(),
+      body: WidgetRow(),
+    );
   }
 }

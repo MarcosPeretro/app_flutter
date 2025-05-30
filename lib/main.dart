@@ -88,5 +88,5 @@ void main() {
   // }
   // runApp(Mycupertino());
 
-  runApp(MotandoTela());
+  runApp(MyWidget());
 }
