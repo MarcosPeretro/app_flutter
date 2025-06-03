@@ -6,15 +6,20 @@ import 'package:meu_app/Atv/Switch22.dart';
 import 'package:meu_app/Atv2/atividade02.dart';
 import 'package:meu_app/Atv2/exercicioMaterial.dart';
 import 'package:meu_app/Botao.dart';
+import 'package:meu_app/Debug.dart';
 import 'package:meu_app/MaterialWidget/myMaterial.dart';
 import 'package:meu_app/cupertino/mycupertino.dart';
 import 'package:meu_app/inherited/UserData.dart';
 import 'package:meu_app/inherited/UserInfos.dart';
+import 'package:meu_app/navegacao/Routes.dart';
+import 'package:meu_app/navegacao/Tela1.dart';
 import 'package:meu_app/stateful/Contador.dart';
 import 'package:meu_app/stateful/DarkMode.dart';
 import 'package:meu_app/stateful/RandomNumber.dart';
 import 'package:meu_app/stateless/SemEstado.dart';
 import 'package:meu_app/stateless/User.dart';
+import 'package:meu_app/usandoAssets/Fontes.dart';
+import 'package:meu_app/usandoAssets/Imagem.dart';
 import 'package:meu_app/widgetsLayout/LayoutApp.dart';
 
 // void main() {
@@ -88,5 +93,13 @@ void main() {
   // }
   // runApp(Mycupertino());
 
-  runApp(MyWidget());
+  // runApp(MyWidget());
+
+  // runApp(Imagem());
+
+  // runApp(const MaterialApp(
+  //   home: Debug(numeroMaximo: 11),
+  // ));
+  
+  runApp(Routes());
 }
