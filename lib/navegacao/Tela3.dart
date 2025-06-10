@@ -10,8 +10,9 @@ class Tela3 extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: (){
-            Navigator.pushNamed(context, '/');
-          }, child: Text("Voltar para tela 1")
+            Navigator.pop(context);
+          }, 
+          child: Text("Voltar para tela 2")
           ),
       ),
     );
