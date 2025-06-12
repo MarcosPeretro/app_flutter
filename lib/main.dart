@@ -9,6 +9,9 @@ import 'package:meu_app/Botao.dart';
 import 'package:meu_app/Debug.dart';
 import 'package:meu_app/MaterialWidget/myMaterial.dart';
 import 'package:meu_app/cupertino/mycupertino.dart';
+import 'package:meu_app/dartAvan%C3%A7ado/future/login.dart';
+import 'package:meu_app/dartAvan%C3%A7ado/isolate/product_parse.dart';
+import 'package:meu_app/dartAvan%C3%A7ado/stream/busca_com_stream.dart';
 import 'package:meu_app/inherited/UserData.dart';
 import 'package:meu_app/inherited/UserInfos.dart';
 import 'package:meu_app/navegacao/Routes.dart';
@@ -101,5 +104,5 @@ void main() {
   //   home: Debug(numeroMaximo: 11),
   // ));
   
-  runApp(Routes());
+  runApp(MaterialApp(home: ProductParse()));
 }
